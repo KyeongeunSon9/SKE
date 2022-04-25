@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* 중복되는 속성은 하나로 묶어놓고 작성하는게 좋다 */
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+        }
+        .scrollbox1 {
+        
+            overflow: scroll;
+        }
+        .scrollbox2 {
+            
+            margin-left: 30px;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+        .scrollbox3 {
+            
+            margin-left: 30px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollbox1">
+        <H4>SCROLL-X,Y</H4>
+        <P>
+            <img src="../img/eda86b27d953e0a1bc89848fff989e659f17e489affba0627eb1eb39695f93dd.png">
+        </P>
+    </div>
+
+    <div class="scrollbox2">
+         <H4>SCROLL-X</H4>
+        <p>
+            <img src="../img/8a732d01bd55418e4d467ca19a1f9e859da62c42300d58e4c04c6cdc6aec1bf5b73c21283984bac5ce34f22995c5d11f00ceacfdaf94aaa1ea9ea21c08c3996a45c345fcae832c2fce991b033f7d794b.png">
+        </p>
+    </div>
+       
+
+    <div class="scrollbox3">
+        <H4>SCROLL-Y</H4>
+        <p>
+            <img src="../img/images.jpg">
+        </p>
+    </div>
+</body>
+</html>
