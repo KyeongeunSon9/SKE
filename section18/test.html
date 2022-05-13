@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            position: relative;
+            
+        }
+
+        div:nth-child(1) {
+            width: 40px;
+            height: 200px;
+            background-color: red;
+            animation: rint 1s infinite alternate;
+            /* transition-property: height; */
+
+        }
+        div:nth-child(2) {
+            width: 100px;
+            height: 40px;
+            background-color: red;
+            position: absolute;
+            transform: translate(20% , -300%);
+            animation: rint2 1s infinite alternate;
+        }
+        div:nth-child(3) {
+            width: 40px;
+            height: 200px;
+            background-color: red;
+            float: left;
+            margin-left: 100px;
+            position: absolute;
+            transform: translate(50% , -100%);
+            animation: rint3 1s infinite alternate;
+        }
+        
+        @keyframes rint {
+            from {
+                height: 0;
+                
+            20% {
+                height: 200px;
+               
+            }
+        }
+        @keyframes rint2 {
+            from {
+                height: 0;
+                
+            20% {
+                height: 200px;
+               
+            }
+        }
+        @keyframes rint3 {
+            from {
+                height: 0;
+                
+            to {
+                height: 200px;
+               
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+</body>
+</html>
